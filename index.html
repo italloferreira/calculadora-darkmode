@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <label class="switch">
+        <img id="sun" src="svg/sun-svgrepo-com.svg">
+        <input type="checkbox" onclick="dark_mode()">
+        <span class="slider"></span>
+        <img id="moon" src="svg/moon-svgrepo-com (1).svg">
+    </label>
+
+    <div class="calculator_box">
+
+        <p id="result"></p>
+    
+            <table>
+                <tr>
+                    <td><button onclick="clean()">AC</button></td>
+                    <td><button onclick="back()">-></button></td>
+                    <td><button onclick="linkedin()"><img id="linkedin" src="svg/linkedin-161-svgrepo-com.svg"></button></td>
+                    <td><button onclick="insert('/')"class="operadores">/</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('7')">7</button></td>
+                    <td><button onclick="insert('8')">8</button></td>
+                    <td><button onclick="insert('9')">9</button></td>
+                    <td><button onclick="insert('*')"class="operadores">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('4')">4</button></td>
+                    <td><button onclick="insert('5')">5</button></td>
+                    <td><button onclick="insert('6')">6</button></td>
+                    <td><button onclick="insert('-')"class="operadores">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('1')">1</button></td>
+                    <td><button onclick="insert('2')">2</button></td>
+                    <td><button onclick="insert('3')">3</button></td>
+                    <td><button onclick="insert('+')"class="operadores" >+</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button class="zero" onclick="insert('0')">0</button></td>
+                    <td><button onclick="insert(',')">,</button></td>
+                    <td><button onclick="calculate()" class="operadores">=</button></td>
+                </tr>
+
+            </table>
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
